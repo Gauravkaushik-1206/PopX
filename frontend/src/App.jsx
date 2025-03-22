@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router"
-import WelcomePage from "./pages/welcomePage"
-import Signin from "./pages/signin"
-import Signup from "./pages/signup"
-import Profile from "./pages/profile"
+import WelcomePage from "./pages/WelcomePage"
+import Signin from "./pages/Signin"
+import Signup from "./pages/Signup"
+import Profile from "./pages/Profile"
 
 function App() {
 
