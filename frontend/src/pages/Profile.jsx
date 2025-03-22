@@ -13,7 +13,7 @@ export default function AccountSettingsPage({ onSignOut }) {
         <div className="flex items-start gap-4">
           <div className="relative">
             <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-200">
-              <img src="/placeholder.svg?height=80&width=80" alt="Profile" className="w-full h-full object-cover" />
+              <img src="https://wallpapers.com/images/featured/cool-profile-picture-87h46gcobjl5e4xu.jpg" alt="Profile" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-1 -right-1 bg-indigo-600 text-white p-1.5 rounded-full">
               <Camera size={16} />

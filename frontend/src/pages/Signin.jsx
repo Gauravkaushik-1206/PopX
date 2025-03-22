@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useNavigate } from "react-router";
 
 export default function Signin({ onSuccess, onBack }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,6 +19,8 @@ export default function Signin({ onSuccess, onBack }) {
       setIsLoading(false);
       onSuccess();
     }, 1000);
+
+    navigate("/profile");
   };
 
   return (

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { useNavigate } from 'react-router'
 
 function Signup() {
     const [formData, setFormData] = useState({
@@ -13,7 +14,8 @@ function Signup() {
         companyName: "",
         isAgency: "yes",
       })
-      const [isLoading, setIsLoading] = useState(false)
+      const [isLoading, setIsLoading] = useState(false);
+      const navigate = useNavigate();
     
       const handleChange = (e) => {
 
@@ -30,6 +32,8 @@ function Signup() {
           setIsLoading(false)
           onSuccess()
         }, 1000)
+
+        navigate("/profile")
       }
   return (
     <div className='flex justify-center'>
